@@ -22,3 +22,9 @@ def generate_list_version_4():
     """Returns a list of even numbers. Second version"""
     even_numbers_list = [x for x in range(2, 11, 2)]
     return even_numbers_list
+
+def generate_list_hardcode_end(start):
+    """Returns a list of even numbers. End is harcoded to avoid start >= end"""
+    end = start + 10
+    even_numbers_list = [x for x in range(start, end, 2)]
+    return even_numbers_list
